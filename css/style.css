@@ -1,0 +1,22 @@
+body {
+    font-family: 'KoHo', sans-serif;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.title-font {
+    text-align: center;
+    font-size: 60px;
+}
+
+.image {
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
