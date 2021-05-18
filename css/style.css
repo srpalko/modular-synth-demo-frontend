@@ -1,12 +1,15 @@
-body {
-    font-family: 'KoHo', sans-serif;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.8);
+nav {
+    background-color: darkgrey;
+}
+
+.email-form {
+    padding: 30px;
 }
 
 .title-font {
     text-align: center;
     font-size: 60px;
+    margin-bottom: 30px;
 }
 
 .image {
@@ -19,4 +22,14 @@ body {
     margin: auto;
     width: 50%;
 }
+
+.center-text {
+    text-align: center;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+
 

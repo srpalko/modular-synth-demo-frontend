@@ -5,54 +5,126 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modular Synthesizers</title>
+    <title>ModSynth</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"/>
+<!--    In document styling -->
+    <style>
+        body {
+            font-family: 'KoHo', sans-serif;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.62);
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Nav element-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/synth-logo (Icon).png" alt="" width="40" height="27"/>
+            ModSynth
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Navigation
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="tech.html">Tech Articles</a></li>
+                        <li><a class="dropdown-item" href="audio.html">Audio</a></li>
                     </ul>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
-<main class="container">
-    <h1 class="title-font">Modular Synthesizers</h1>
-    <img src="img/ryunosuke-kikuno-aVOACNd1cc0-unsplash%20(Small).jpg" alt="large vintage modular synth"
-         class="image center"/>
-</main>
+<div class="container">
+    <main>
+        <div class="row">
+            <h1 class="title-font">ModSynth</h1>
+        </div>
+        <p style="text-align: center; font-size: 20px;">The online resource for modular synthesizers</p>
+        <img src="img/ryunosuke-kikuno-aVOACNd1cc0-unsplash%20(Small).jpg" alt="large vintage modular synth"
+             class="center image img-fluid"/>
+        <p>Welcome to the world of modular synthesis. Here you will find resources for everything about modular
+            synths. Be sure to check out the gallery and audio pages for some classic synth pictures and sounds.
+            Also, the technical articles page has some educational articles to help you learn about what makes
+            synthesizers work.
+        </p>
+        <h3>Need help picking a synth? Choose a brand, and we'll show you a randomly chosen model!</h3>
+        <div class="row">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="buchla">
+                    <label class="form-check-label" for="buchla">Buchla</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="moog">
+                    <label class="form-check-label" for="moog">Moog</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="dsi">
+                    <label class="form-check-label" for="dsi">DSI</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="yamaha">
+                    <label class="form-check-label" for="yamaha">Yamaha</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="roland">
+                    <label class="form-check-label" for="roland">Roland</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="korg">
+                    <label class="form-check-label" for="korg">Korg</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="ppg">
+                    <label class="form-check-label" for="ppg">PPG</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="synth-type" id="oberheim">
+                    <label class="form-check-label" for="oberheim">Oberheim</label>
+                </div>
+            </div>
+            <div class="col display-3" id="random-display"></div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="chooser">Show Model</button>
+        <hr/>
+        <p>If you would like more info, sign up for the ModSynth mailing list below.
+            Also, add your telephone number to subscribe to our synth concert series, performed completely over the
+            phone! U.S. numbers only.</p>
+    </main>
+    <form class="email-form">
+        <div class="mb-3">
+            <label for="newsletter-email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="newsletter-email" required>
+        </div>
+        <div class="mb-3">
+            <label for="sonic-telephone" class="form-label">U.S. Telephone Number (Optional)</label>
+            <input type="tel" class="form-control" id="sonic-telephone"/>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="synth-offers">
+            <label class="form-check-label" for="synth-offers">Send me great synth offers!</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
